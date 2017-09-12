@@ -12,7 +12,19 @@ npm i --save-dev postcss postcss-comment-2
 
 ```
 
+### Webpack postcss.config.js
+
+```javascript
+module.exports = {
+  parser: 'postcss-comment-2',
+  plugins: {
+    // ... other plugins
+  },
+}
+````
+
 ### As parser
+
 
 ```javascript
 var postcss = require('postcss')
