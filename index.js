@@ -1,2 +1,1 @@
-exports.parse = require('./lib/parse')
-
+module.exports = require('./lib/parse')

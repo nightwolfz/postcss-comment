@@ -1,15 +1,14 @@
-# postcss-comment
-[![version](https://img.shields.io/npm/v/postcss-comment.svg)](https://www.npmjs.org/package/postcss-comment)
-[![status](https://travis-ci.org/zoubin/postcss-comment.svg?branch=master)](https://travis-ci.org/zoubin/postcss-comment)
-[![dependencies](https://david-dm.org/zoubin/postcss-comment.svg)](https://david-dm.org/zoubin/postcss-comment)
-[![devDependencies](https://david-dm.org/zoubin/postcss-comment/dev-status.svg)](https://david-dm.org/zoubin/postcss-comment#info=devDependencies)
+# postcss-comment-2
+[![version](https://img.shields.io/npm/v/postcss-comment.svg)](https://www.npmjs.org/package/postcss-comment-2)
+[![dependencies](https://david-dm.org/nightwolfz/postcss-comment.svg)](https://david-dm.org/nightwolfz/postcss-comment)
+[![devDependencies](https://david-dm.org/nightwolfz/postcss-comment/dev-status.svg)](https://david-dm.org/nightwolfz/postcss-comment#info=devDependencies)
 
-Allow postcss to support inline comments.
+Allow postcss to support inline comments. Updated to work with PostCSS 6.
 
 ## Usage
 
 ```bash
-npm i --save-dev postcss postcss-comment
+npm i --save-dev postcss postcss-comment-2
 
 ```
 
@@ -17,7 +16,7 @@ npm i --save-dev postcss postcss-comment
 
 ```javascript
 var postcss = require('postcss')
-var parser = require('postcss-comment')
+var parser = require('postcss-comment-2')
 
 var fs = require('fs')
 
@@ -36,7 +35,7 @@ postcss()
 
 ### Hook require
 ```javascript
-require('postcss-comment/hookRequire')
+require('postcss-comment-2/hookRequire')
 var postcss = require('postcss')
 
 var fs = require('fs')
@@ -56,7 +55,7 @@ postcss()
 
 Or:
 ```javascript
-var postcss = require('postcss-comment/hookRequire')
+var postcss = require('postcss-comment-2/hookRequire')
 
 var fs = require('fs')
 

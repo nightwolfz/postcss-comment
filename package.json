@@ -1,31 +1,52 @@
 {
-  "name": "postcss-comment",
-  "version": "1.0.3",
-  "description": "Allow postcss to support inline comments",
+  "name": "postcss-comment-2",
+  "version": "1.0.0",
+  "description": "Allow postcss to support inline comments. Works with PostCSS 6",
   "main": "index.js",
   "scripts": {
-    "test": "tap test/*.js",
-    "coveralls": "COVERALLS_REPO_TOKEN=REPO_TOKEN npm test"
+	  "test": "jest -i --colors --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zoubin/postcss-comment.git"
+    "url": "git+https://github.com/nightwolfz/postcss-comment.git"
   },
   "keywords": [
     "postcss",
+    "postcss-runner",
+    "postcss-comment",
+    "postcss-comment-2",
     "inline",
     "comment"
   ],
-  "author": "zoubin",
+  "author": "nightwolfz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zoubin/postcss-comment/issues"
+    "url": "https://github.com/nightwolfz/postcss-comment/issues"
   },
-  "homepage": "https://github.com/zoubin/postcss-comment#readme",
+  "homepage": "https://github.com/nightwolfz/postcss-comment#readme",
   "dependencies": {
-    "postcss": "^5.0.10"
+    "postcss": "^6.0.11"
   },
   "devDependencies": {
-    "tap": "^5.0.0"
+    "eslint": "^4.6.1",
+    "jest": "^21.0.2"
+  },
+  "jest": {
+    "automock": false,
+    "bail": true,
+    "verbose": true,
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "watchPathIgnorePatterns": [
+      "<rootDir>/example/"
+    ],
+    "testMatch": [
+      "**/test/(*.)(spec|test).js"
+    ]
   }
 }
